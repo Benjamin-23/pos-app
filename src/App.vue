@@ -1,31 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <img alt="pos logo" src="./assets/pos.jpg">
   <HelloWorld msg="Welcome to Pos-trial"/>
-  <sales msg = " Today's Sales"/>
+  <product productName="Product"/>
+
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import sales from './components/sales.vue'
-import event from './components/event.vue'
+import Product from './components/Product.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    sales,
-    event
-  }
+    Product
+  },
+
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+background-color: rgb(218, 253, 241);
+  margin-top: 10px;
 }
+img{
+  height: 256px;
+  width: 256px;
+}
+
 </style>
