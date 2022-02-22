@@ -1,19 +1,23 @@
 <template>
   <img alt="pos logo" src="./assets/pos.jpg">
   <HelloWorld msg="Welcome to Pos-trial"/>
-  <product productName="Product"/>
+  <products></products>
+  <shopOrg/>
+  <shopOrg/>
 
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import Product from './components/Product.vue'
+import products from './components/products.vue'
+import shopOrg from './components/shopOrg.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Product
+    products,
+    shopOrg
   },
 
 }
